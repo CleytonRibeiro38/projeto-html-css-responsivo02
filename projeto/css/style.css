@@ -33,3 +33,18 @@ nav ul li a:hover {background-color: #02CA3E; color: #41FE01;}
 nav ul li ul {position: relative; margin: 0 auto; width: 100%; background-color: #006600; padding: 10px;}
 nav ul li ul li a {text-align: left; border-bottom: 1px solid #009900;}
 nav ul li ul li a:hover {color: #9ACD32; background-color: #003300;}
+/*==========GALERIA DE IMAGENS==========*/
+.fundoVerde{
+    color: #45D345;
+    background-color: #009900;
+}
+.galeria img{
+    background-color: #008200;
+    padding: 5px;
+    height: 160px;
+    filter: grayscale(100%);
+}
+.galeria img:hover{
+    filter: grayscale(0);
+    transition: all 1s ease;
+}
