@@ -63,4 +63,12 @@ display: table-cell; vertical-align: middle;}
 .fundoDestaque1 {background-image: url(../uploads/fundoDestaque1.jpg); background-size: 100% 100%;}
 .fundoDestaque2 {position: relative; top: -10px; background: url(../uploads/fundoDestaque2.png) no-repeat 45px 120px;
 background-size: 80%;}
+/*==========CORPO03 (TABELA)==========*/
+.fundoVerdeBandeira {color: #9ACD32; background-color: #228B22;}
+table {color: #092000; width: 100%;}
+table thead {background-color: #007138; color: #00F400;}
+table tr th {border: 1px solid #007d3f; padding: 15px;}
+table tr td {border: 1px solid green; padding: 15px;}
+table tbody tr:nth-child(2n+1) {background-color: #2cb42c;}
+table tfoot {font-size: 0.8em; background-color: #009b4e;}
 
