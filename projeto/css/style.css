@@ -38,3 +38,7 @@ nav ul li ul li a:hover {color: #9ACD32; background-color: #003300;}
 .galeria div {padding: 15px;}
 .galeria img {background-color: #008200; padding: 5px; height: 160px; filter: grayscale(100%);}
 .galeria img:hover {filter: grayscale(0); transition: all 1s ease;}
+/*==========TÍTULOS==========*/
+h1,h2,h3 {font-size: 2.5em; font-family: 'Anton', sans-serif; letter-spacing: 2px; text-transform: uppercase;padding: 10px;}
+/*==========PARÁGRAFOS==========*/
+p {text-align: left; margin-bottom: 15px;}
