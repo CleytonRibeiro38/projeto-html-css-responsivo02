@@ -42,3 +42,9 @@ nav ul li ul li a:hover {color: #9ACD32; background-color: #003300;}
 h1,h2,h3 {font-size: 2.5em; font-family: 'Anton', sans-serif; letter-spacing: 2px; text-transform: uppercase;padding: 10px;}
 /*==========PARÁGRAFOS==========*/
 p {text-align: left; margin-bottom: 15px;}
+/*==========CORPO01==========*/
+.fundoVerdePrimavera {color: #005500; background-color: #33CC33;}
+.estatisticas li {display: inline-block; margin: 10px;}
+.estatisticas li p {text-align: center; color: #666600;}
+.estatisticas li p:first-child {color: #91F000; font-size: 4em; font-weight: bold; text-shadow: 2px 2px #003300;
+margin-bottom: -5px;}
