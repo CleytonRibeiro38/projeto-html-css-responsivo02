@@ -115,3 +115,6 @@ border-radius: 50%; margin: auto; transform: rotate(50deg); padding-top: 20px; a
 .botaoGrande {font-size: 1.1em; padding: 12px 40px;}
 .botaoVerde {background-color: #00a753; border-color: #006600;}
 .botaoVerde:hover {background-color: #00c161;}
+/*==========BOTÃO VOLTAR AO TOPO==========*/
+.voltarTopo {position: fixed; bottom: 10px; right: 10px; width: 47px; height: 47px; 
+background-image: url(../imagens/voltarTopo.png); display: none;}

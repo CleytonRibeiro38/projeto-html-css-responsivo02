@@ -30,12 +30,22 @@ $(function () {
         }
     });
 
+    /*==========SCROLL SUAVE==========*/ 
     var $doc = $('html,body');
     $('.scrollSuave').click(function (){
         $doc.animate({
             scrollTop:$($.attr(this,'href')).offset().top
         }, 1000);
         return false;
+    });
+
+    /*==========BOTÃO VOLTAR AO TOPO==========*/ 
+    $(document).scroll(function(){
+        if($(this).scrollTop() > 500){
+            document.getElementById("voltarTopo").style.display = "block";
+        }else{
+            document.getElementById("voltarTopo").style.display = "none";
+        }
     });
 
 });
