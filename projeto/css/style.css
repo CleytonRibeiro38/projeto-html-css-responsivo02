@@ -78,5 +78,33 @@ table tfoot {font-size: 0.8em; background-color: #009b4e;}
 background-color: #00F400; border: 3px solid #00F400;}
 .conselhos h3 {color: #00F400; font-family: arial; font-size: 1em; padding: 0;}
 .conselhos p {color: #083000; font-style: italic; margin-bottom: 0;}
-
-
+/*==========FOOTER==========*/
+footer {font-size: 0.9em;}
+footer h4 {font-size: 1.3em; text-transform: uppercase; padding-bottom: 20px; margin: 20px;
+border-bottom: 1px solid #008040;}
+footer ul {text-indent: 10px;}
+footer ul li {text-align: left; height: 40px;}
+footer ul li a {color: #33CC33;}
+footer ul li a:hover {font-weight: bold; color: #99ff99; text-decoration: underline;}
+.icones {float: left; width: 28px; height: 26px; background-image: url(../imagens/icones.png);}
+.iconeHome {background-position: 140px 26px;}
+.iconeHost {background-position: 110px 26px;}
+.iconeFacebook {background-position: 0 0;}
+.iconeYoutube {background-position: 28px 0;}
+.iconeTwitter {background-position: 112px 0;}
+.campoNewsletter {padding: 5px; background-color: #33CC33; border: 2px solid #006600;}
+.numero {color: #228B22; font-weight: bold; width: 120px; height: 120px; background-color: #99ff99;
+border-radius: 50%; margin: auto; transform: rotate(50deg); padding-top: 20px; animation: numero 10s infinite;}
+@keyframes numero{
+    0%{
+        color: #228b22;
+    }
+    25%{
+        color: #00c161;
+    }
+    75%{
+        color: #00f400;
+    }
+}
+.numero p {text-align: center; font-size: 1.2em; margin-bottom: 0;}
+.numero span {font-size: 4em;}
