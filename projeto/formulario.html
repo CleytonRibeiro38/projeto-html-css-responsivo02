@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de exemplo.</title>
+
+    <style>
+        form input{
+            display: block;
+            margin: 5px;
+        }
+        fieldset{
+            width: 30%;;
+            margin: 5px;
+        }
+        fieldset.sexo input{
+            display: inline-block;
+        }
+        form label{
+            display: inline-block;
+            margin-top: 5px;
+        }
+        form textarea{
+            margin-top: 5px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1>Formulário de exemplo.</h1>
+
+    <form name="formulario" method="post" action="?" enctype="multipart/form-data">
+
+        <fieldset>
+            <legend>Campos mais utilizados.</legend>
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome" placeholder="Nome Completo" maxlength="55" required tabindex="2">
+            
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" id="senha" required tabindex="3">
+
+            <label for="e-mail">E-mail</label>
+            <input type="email" name="senha" id="e-mail" required tabindex="1">
+
+            <label for="url">Url</label>
+            <input type="url" name="url" id="url" required tabindex="4">
+
+            <label for="data">Data</label>
+            <input type="date" name="data" id="data" required tabindex="1" max="2016-12-31">
+
+            <fieldset class="sexo">
+                <legend>Sexo</legend>
+                <label for="masculino">Masculino</label>
+                <input type="radio" name="sexo" id="masculino" value="masculino">
+                <label for="feminino">Feminino</label>
+                <input type="radio" name="sexo" id="feminino" value="feminino">
+            </fieldset>
+
+            <label for="concordo">Concordo</label>
+            <input type="checkbox" name="concordo" id="concordo">
+
+            <label for="estados">Selecione uma opção</label>
+            <select name="estados" id="estados">
+                <optgroup label="Região Centro-Oeste">
+                    <option value="DF">Distrito Federal</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                </optgroup>
+                <optgroup label="Região Sudeste">
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+            </select><br>
+
+            <label for="msg">Mensagem:</label>
+            <textarea name="mensagens" id="msg" cols="35" rows="5"></textarea>
+
+            <label for="upload">Upload de Imagem</label>
+            <input type="file" name="upload" id="upload" accept="image/*">
+
+            <label for="upload">Upload de Imagens</label>
+            <input type="file" name="upload" multiple id="upload" accept="image/*">
+
+            <label for="numero">Número:</label>
+            <input type="number" name="numero" id="numero" min="3" max="7" step="0.5">
+
+            <label for="range">Range</label>
+            <input type="range" name="range" id="range">
+
+            <label for="cor">Cor:</label>
+            <input type="color" name="cor" id="cor">
+
+            <label for="mes">Mês:</label>
+            <input type="month" name="mes" id="mes">
+
+            <label for="tempo">Horário:</label>
+            <input type="time" name="tempo" id="tempo">
+
+            <label for="data-e-hora">Data e Hora:</label>
+            <input type="datetime-local" name="data-e-hora" id="data-e-hora">
+
+            <label for="lista">Datalist</label>
+            <input type="text" name="listaEstados" id="lista" list="listaEstados">
+            <datalist id="listaEstados">
+                <option label="MT" value="Mato Grosso"></option>
+                <option label="SP" value="São Paulo"></option>
+                <option label="RJ" value="Rio de Janeiro"></option>
+                <option label="PR" value="Paraná"></option>
+            </datalist>
+
+            <label for="meter">Meter</label>
+            <meter min="0" max="100" low="15" value="55"></meter><br>
+
+            <progress max="100" value="60"></progress>
+
+            <input type="hidden" name="oculto" id="idUsuario">
+
+
+        </fieldset>
+
+        <fieldset>
+            <input type="submit" value="Enviar Formulário">
+            <input type="reset" value="Limpar Formulário">
+        </fieldset>
+
+    </form>
+
+</body>
+</html>
