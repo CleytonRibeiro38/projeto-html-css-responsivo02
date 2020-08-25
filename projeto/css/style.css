@@ -140,5 +140,32 @@ background: #83e083; border: 2px solid #006600; margin: 5px 0;}
 meter,progress {text-align: left; display: block; margin: 5px;}
 input[type="checkbox"],input[type="radio"] {width: 10%;}
 input[type="submit"],input[type="reset"] {width: auto;}
+/*==========MEDIA QUERIES==========*/
+@media screen and (max-width: 480px){
+.conteudo {width: 100%;}
+.caixa {margin: 5px;}
+.logo {width: 250px;}
+h1,h2,h3 {font-size: 1.5em;}
+.estatisticas li {display: block;}
+.estatisticas li p:first-child {font-size: 3em;}
+.slide {min-height: 200px;}
+#slideshow-banner ul .slideshow-item {height: 200px;}
+}
+@media screen and (max-width: 1024px){
+.conteudo {width: 95%;}
+}
+@media screen and (min-width: 480px) and (max-width: 640px){
+.galeria img {height: 250px;}
+}
+@media screen and (min-width: 1024px) and (max-width: 1380px){
+.destaque h2 {font-size: 3em;}
+.destaque h3 {font-size: 2em;}
+}
+@media (max-width: 960px){
+.formularioBusca {width: 100%; margin-top: -40px;}
+.slide {min-height: 300px;}
+#slideshow-banner ul .slideshow-item {height: 300px;}
+}
+
 
   
