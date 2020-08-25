@@ -22,7 +22,7 @@ $(function () {
         controllerRightButton: "imagens/direita.png"
     });
 
-    /*==========?==========*/
+    /*==========GALERIA DE IMAGENS (FANCYBOX)==========*/
     $('.fancybox').fancybox({
         openEffect: 'elastic',
         openSpeed: 150,
@@ -37,6 +37,15 @@ $(function () {
             },
             buttons: {}
         }
+    });
+
+    /*==========JANELA MODAL (FANCYBOX)==========*/
+    $('.fancyboxFormulario').fancybox({
+        openEffect: 'fade',
+        closeEffect: 'elastic',
+        openSpeed: 1500,
+        closeSpeed: 1500,
+        title: false,
     });
 
     /*==========SCROLL SUAVE==========*/
