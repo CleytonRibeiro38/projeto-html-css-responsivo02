@@ -1,3 +1,4 @@
+/*==========MENU==========*/
 $(function () {
     $('.botaoMenu').click(function (event) {
         event.stopPropagation();
@@ -14,9 +15,17 @@ $(function () {
         $('nav ul').animate({ 'left': '-100%' }, 300);
     });
 
+    /*==========SLIDE==========*/
+    $('#slideshow-banner').slide({
+        cdTime: 5000,
+        controllerLeftButton: "imagens/esquerda.png",
+        controllerRightButton: "imagens/direita.png"
+    });
+
+    /*==========?==========*/
     $('.fancybox').fancybox({
-        openEffect : 'elastic',
-        openSpeed  : 150,
+        openEffect: 'elastic',
+        openSpeed: 150,
         closeEffect: 'none',
         prevEffect: 'none',
         nextEffect: 'none',
@@ -30,20 +39,20 @@ $(function () {
         }
     });
 
-    /*==========SCROLL SUAVE==========*/ 
+    /*==========SCROLL SUAVE==========*/
     var $doc = $('html,body');
-    $('.scrollSuave').click(function (){
+    $('.scrollSuave').click(function () {
         $doc.animate({
-            scrollTop:$($.attr(this,'href')).offset().top
+            scrollTop: $($.attr(this, 'href')).offset().top
         }, 1000);
         return false;
     });
 
-    /*==========BOTÃO VOLTAR AO TOPO==========*/ 
-    $(document).scroll(function(){
-        if($(this).scrollTop() > 500){
+    /*==========BOTÃO VOLTAR AO TOPO==========*/
+    $(document).scroll(function () {
+        if ($(this).scrollTop() > 500) {
             document.getElementById("voltarTopo").style.display = "block";
-        }else{
+        } else {
             document.getElementById("voltarTopo").style.display = "none";
         }
     });
