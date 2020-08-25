@@ -16,7 +16,7 @@ header {padding: 40px 0; border-bottom: 5px solid #009900;}
 /*==========FORMULÁRIO DE BUSCA==========*/
 .formularioBusca {width: 50%; height: 32px; margin: 10px 0 15px 0; position: relative; float: left;}
 .formularioBusca input {text-align: left; color: #003300; text-indent: 5px; height: 30px; border: none;background-color: #33CC33; border-radius: 5px; padding: 0;}
-.botaoBusca {width: 26px; height: 26px; background: url(../imagens/icones.png) no-repeat -58px -26px;
+.botaoBusca {width: 26px !important; height: 26px; background: url(../imagens/icones.png) no-repeat -58px -26px;
 position: absolute; top: 0; right: 0; cursor: pointer;}
 ::-webkit-input-placeholder {color: #006600; font: normal bold 0.8em arial;}
 /*==========LOGO==========*/
