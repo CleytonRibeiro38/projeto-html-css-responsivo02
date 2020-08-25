@@ -118,3 +118,14 @@ border-radius: 50%; margin: auto; transform: rotate(50deg); padding-top: 20px; a
 /*==========BOTÃO VOLTAR AO TOPO==========*/
 .voltarTopo {position: fixed; bottom: 10px; right: 10px; width: 47px; height: 47px; 
 background-image: url(../imagens/voltarTopo.png); display: none;}
+/*==========FORMULÁRIOS==========*/
+form {width: 90%; margin: 0 auto;}
+::-webkit-input-placeholder {font-style: italic; opacity: 0.5;}
+fieldset {border: 1px solid #269526; padding: 10px; margin: 10px;}
+legend {margin:15px;}
+label {text-align: left; display: block;}
+input,select,textarea {width: 100%; text-align: left; display: block; color: #007138; padding: 15px; 
+background: #83e083; border: 2px solid #006600; margin: 5px 0;}
+meter,progress {text-align: left; display: block; margin: 5px;}
+input[type="checkbox"],input[type="radio"] {width: 10%;}
+input[type="submit"],input[type="reset"] {width: auto;}
