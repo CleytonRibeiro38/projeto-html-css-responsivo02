@@ -1,3 +1,9 @@
+/*==========CARREGANDO==========*/
+$(window).on('load', function (){
+    document.getElementById("carregando").style.display = "none";
+    document.getElementById("corpo").style.display = "block";
+});
+
 /*==========MENU==========*/
 $(function () {
     $('.botaoMenu').click(function (event) {
@@ -11,6 +17,11 @@ $(function () {
         }
     });
     $('body').on('click', function () {
+        $('.botaoMenu').removeClass('menuAtivo');
+        $('nav ul').animate({ 'left': '-100%' }, 300);
+    });
+
+    $('.linkMenu').on('click', function () {
         $('.botaoMenu').removeClass('menuAtivo');
         $('nav ul').animate({ 'left': '-100%' }, 300);
     });
@@ -64,12 +75,6 @@ $(function () {
         } else {
             document.getElementById("voltarTopo").style.display = "none";
         }
-    });
-
-    /*==========CARREGANDO==========*/
-    $(window).on('load', function (){
-        document.getElementById("carregando").style.display = "none";
-        document.getElementById("corpo").style.display = "block";
     });
 
     //var intervalo = setInterval(function (){
